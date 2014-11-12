@@ -320,6 +320,16 @@ a:focus {
     background-color: #219ab3;
 }
 
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
 ul.banner-social-buttons {
     margin-top: 0;
 }
