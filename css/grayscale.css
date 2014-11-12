@@ -66,7 +66,7 @@ a:focus {
 }
 
 .unshadowed {
-    text-shadow: none;
+    text-shadow: white 0.1em 0.1em 0.2em;
 }
 
 .navbar-custom {
