@@ -62,11 +62,15 @@ a:focus {
 }
 
 .drop-shadow {
-    text-shadow: black 0.1em 0.1em 0.2em;
+    text-shadow: black 0.1em 0.2em 0.2em;
 }
 
 .unshadowed {
     text-shadow: white 0.1em 0.1em 0.2em;
+}
+
+.black {
+    color: #000;
 }
 
 .navbar-custom {
@@ -146,7 +150,6 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    text-shadow: black 0.1em 0.1em 0.2em;
     background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
@@ -264,7 +267,7 @@ a:focus {
 .projects-section {
     width: 100%;
     padding: 50px 0;
-    color: #fff;
+    color: #000;
     background: url(../img/projects-bg.jpg) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;

@@ -8,8 +8,10 @@
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
+        $("#page-top-link").removeClass("hidden");
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
+        $("#page-top-link").addClass("hidden");
     }
 });
 
