@@ -14,9 +14,11 @@
     <div class="container">
       <div class="row">
         <a href="/index.html" class="btn btn-xs btn-default"><i class="fa fa-puzzle-piece"></i> Back to Home</a>
+        <a href="#learning">Learning Projects</a> |
+        <a href="#open-source">Open Source Projects</a>
       </div>
       <div class="row">
-        <h1>Learning Projects</h1>
+        <h1 id="learning">Learning Projects</h1>
         <p>These projects were all started while learning web development at <a href="http://www.epicodus.com"><strong>Epicodus</strong></a>.</p>
         <div class="col-sm-4">
           <h3>Ruby on Rails</h3>
@@ -116,9 +118,16 @@
       </div> <!-- end of Learning row -->
 
       <div class="row">
-        <h1>Open Source Projects</h1>
+        <h1 id="open-source">Open Source Projects</h1>
         <p>Below are various Ruby gems, plugins, and other open source projects I have contributed to. This list is by no means all-inclusive.</p>
         <ul>
+          <li>
+            <h4>Sorcery</h4>
+            <p>A Ruby authentication gem similar to Devise, but much more lightweight. I contributed the Login with Salesforce option using Oauth2. My Pull Request has not yet been merged, but it is tested and working in a production application I deployed.</p>
+            <a href="https://github.com/supremebeing7/sorcery">View Source</a> |
+            <a href="https://github.com/supremebeing7/sorcery/commits?author=supremebeing7">My Commits</a>
+            <a href="https://github.com/NoamB/sorcery/pull/652">Pull Request Status</a>
+          </li>
           <li>
             <h4>Githubrepo</h4>
             <p>A simple Ruby gem that will allow one to create a repository in Github from the command line. I contributed the option to add a description, make it auto-copy the repository link to the clipboard, and allow one to request the SSH link rather than the HTTP link.</p>
