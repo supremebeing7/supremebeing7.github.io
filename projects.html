@@ -14,9 +14,89 @@
     <div class="container">
       <div class="row">
         <a href="/index.html" class="btn btn-xs btn-default"><i class="fa fa-puzzle-piece"></i> Back to Home</a>
-        <a href="#learning">Learning Projects</a> |
-        <a href="#open-source">Open Source Projects</a>
+        <a href="#open-source">Open Source Projects</a> | 
+        <a href="#learning">Learning Projects</a>
       </div>
+
+      <div class="row">
+        <h1 id="open-source">Open Source Projects</h1>
+        <p>Below are various Ruby gems, plugins, and other open source projects I have contributed to. This list is by no means all-inclusive.</p>
+        <ul>
+          <li>
+            <h4>Sorcery</h4>
+            <p>A Ruby authentication gem similar to Devise, but much more lightweight. I contributed the Login with Salesforce option using Oauth2. </p>
+            <a href="https://github.com/NoamB/sorcery/pull/652">Pull Request & My Commits</a> |
+            <a href="https://github.com/supremebeing7/sorcery">View Source</a> 
+          </li>
+          <li>
+            <h4>HTTParty</h4>
+            <p>A Ruby HTTP library that aims to make HTTP fun again. I fixed an issue that was changing HEAD requests into GET requests when following redirects.</p>
+            <a href="https://github.com/jnunemaker/httparty/pull/430">Pull Request & My Commits</a> |
+            <a href="https://github.com/jnunemaker/httparty">View Source</a> 
+          </li>
+          <li>
+            <h4>Calagator</h4>
+            <p>A calendar aggregator site for tech events throughout the Portland region. One of my Pull Requests aimed to solve a bug that disallowed editing events added via import. My other contributions mostly had a focus on improving the user experience, including 1) dynamically inserting easily identifiable icons based on the user-given tags; 2) friendlier error pages for 404 and 500; 3) fixing machine tags to point to the correct external sites; and 4) modifying routes for filtering events by tag to make the URL more user friendly.</p>
+            <a href="https://github.com/calagator/calagator/commits?author=supremebeing7">My Commits</a> |
+            <a href="https://github.com/calagator/calagator">View Source</a> 
+          </li>
+          <li>
+            <h4>Cheddar Robot</h4>
+            <p>A web app I created that would allow automating certain bank related tasks, such as watching account balances and transactions and triggering transfers based on the transaction description. The initial goal was an If This Then That style of banking for consultants and independent contractors to automatically transfer portions of paychecks into savings or retirement accounts.</p>
+            <p>This app is In Development and not currently functioning.</p>
+            <a href="https://github.com/supremebeing7/cheddar_robot/">View Source</a> 
+          </li>
+          <li>
+            <h4>Plaid-Ruby</h4>
+            <p>A Ruby gem for interacting with the Plaid banking API. I updated the documentation based on some troubles I had in connecting to the API using the gem.</p>
+            <a href="https://github.com/plaid/plaid-ruby/commits?author=supremebeing7">My Commits</a> |
+            <a href="https://github.com/plaid/plaid-ruby">View Source</a> 
+          </li>
+          <li>
+            <h4>Githubrepo</h4>
+            <p>A simple Ruby gem that will allow one to create a repository in Github from the command line. I contributed the option to add a description, make it auto-copy the repository link to the clipboard, and allow one to request the SSH link rather than the HTTP link.</p>
+            <a href="https://github.com/elikem/githubrepo/commits?author=supremebeing7">My Commits</a> |
+            <a href="https://github.com/elikem/githubrepo">View Source</a>
+          </li>
+          <li>
+            <h4>Mailboxer</h4>
+            <p>A Rails gem to send messages inside a web application. I fixed the mailer views generator which had become broken when someone had added namespacing on a newer release. I also updated the README with instructions for running the views generator and logged several bugs in attempting to make the gem compatible with Rails 4.1+.</p>
+            <a href="https://github.com/mailboxer/mailboxer/pull/291">Pull Request & My Commits</a> |
+            <a href="https://github.com/mailboxer/mailboxer">View Source</a> 
+          </li>
+          <li>
+            <h4>Sidekiq Snitch</h4>
+            <p>A simple Rails engine to monitor your Sidekiq queue using Dead Man's Snitch. I made a change so that it would only try to run this if a Snitch URL was configured - before this change, the tool would continuously run and error.</p>
+            <a href="https://github.com/spacebabies/sidekiq_snitch/commits?author=supremebeing7">My Commits</a> |
+            <a href="https://github.com/spacebabies/sidekiq_snitch">View Source</a> 
+          </li>
+          <li>
+            <h4>Launchy</h4>
+            <p>A Ruby helper for launching cross-platform applications in a fire and forget manner. I added clarifying information in the README about using it in conjunction with the Capybara testing tool.</p>
+            <a href="https://github.com/copiousfreetime/launchy/commits?author=supremebeing7">My Commits</a> |
+            <a href="https://github.com/copiousfreetime/launchy">View Source</a> 
+          </li>
+          <li>
+            <h4>Textacular</h4>
+            <p>A Ruby gem that exposes full text search capabilities from PostgreSQL, and allows you to declare full text indexes. I added clarifying information to the README about the fuzzy search capability. This was my first open source contribution.</p>
+            <a href="https://github.com/textacular/textacular/commits?author=supremebeing7">My Commits</a> |
+            <a href="https://github.com/textacular/textacular">View Source</a>
+          </li>
+          <li>
+            <h4>Gitlab</h4>
+            <p>A Ruby wrapper and CLI for the GitLab REST API. I committed clarifying instructions to the README.</p>
+            <a href="https://github.com/NARKOZ/gitlab/commits?author=supremebeing7">My Commits</a> |
+            <a href="https://github.com/NARKOZ/gitlab">View Source</a>
+          </li>
+          <li>
+            <h4>Masonry Rails</h4>
+            <p>An adaptation of the jQuery Masonry plugin ready for use with Rails asset pipeline. I contributed fixes for typos and missing closing tags in examples on README.</p>
+            <a href="https://github.com/kristianmandrup/masonry-rails/commits?author=supremebeing7">My Commits</a> |
+            <a href="https://github.com/kristianmandrup/masonry-rails">View Source</a> 
+          </li>
+        </ul>
+      </div> <!-- end of Open Source row -->
+
       <div class="row">
         <h1 id="learning">Learning Projects</h1>
         <p>These projects were all started while learning web development at <a href="http://www.epicodus.com"><strong>Epicodus</strong></a>.</p>
@@ -117,69 +197,6 @@
         </div>
       </div> <!-- end of Learning row -->
 
-      <div class="row">
-        <h1 id="open-source">Open Source Projects</h1>
-        <p>Below are various Ruby gems, plugins, and other open source projects I have contributed to. This list is by no means all-inclusive.</p>
-        <ul>
-          <li>
-            <h4>Sorcery</h4>
-            <p>A Ruby authentication gem similar to Devise, but much more lightweight. I contributed the Login with Salesforce option using Oauth2. My Pull Request has not yet been merged, but it is tested and working in a production application I deployed.</p>
-            <a href="https://github.com/supremebeing7/sorcery">View Source</a> |
-            <a href="https://github.com/supremebeing7/sorcery/commits?author=supremebeing7">My Commits</a> |
-            <a href="https://github.com/NoamB/sorcery/pull/652">Pull Request Status</a>
-          </li>
-          <li>
-            <h4>Calagator</h4>
-            <p>A calendar aggregator site for tech events throughout the Portland region. My contributions all had a focus on improving the user experience, including 1) dynamically inserting easily identifiable icons based on the user-given tags; 2) friendlier error pages for 404 and 500; 3) fixing machine tags to point to the correct external sites; and 4) modifying routes for filtering events by tag to make the URL more user friendly.</p>
-            <a href="https://github.com/calagator/calagator">View Source</a> |
-            <a href="https://github.com/calagator/calagator/commits?author=supremebeing7">My Commits</a>
-          </li>
-          <li>
-            <h4>Githubrepo</h4>
-            <p>A simple Ruby gem that will allow one to create a repository in Github from the command line. I contributed the option to add a description, make it auto-copy the repository link to the clipboard, and allow one to request the SSH link rather than the HTTP link.</p>
-            <a href="https://github.com/elikem/githubrepo">View Source</a> |
-            <a href="https://github.com/elikem/githubrepo/commits?author=supremebeing7">My Commits</a>
-          </li>
-          <li>
-            <h4>Mailboxer</h4>
-            <p>A Rails gem to send messages inside a web application. I fixed the mailer views generator which had become broken when someone had added namespacing on a newer release. I also updated the README with instructions for running the views generator and logged several bugs in attempting to make the gem compatible with Rails 4.1+.</p>
-            <a href="https://github.com/mailboxer/mailboxer">View Source</a> |
-            <a href="https://github.com/mailboxer/mailboxer/commits?author=supremebeing7">My Commits</a>
-          </li>
-          <li>
-            <h4>Launchy</h4>
-            <p>A Ruby helper for launching cross-platform applications in a fire and forget manner. I added clarifying information in the README about using it in conjunction with the Capybara testing tool.</p>
-            <a href="https://github.com/copiousfreetime/launchy">View Source</a> |
-            <a href="https://github.com/copiousfreetime/launchy/commits?author=supremebeing7">My Commits</a>
-          </li>
-          <li>
-            <h4>Textacular</h4>
-            <p>A Ruby gem that exposes full text search capabilities from PostgreSQL, and allows you to declare full text indexes. I added clarifying information to the README about the fuzzy search capability. This was my first open source contribution.</p>
-            <a href="https://github.com/textacular/textacular">View Source</a> |
-            <a href="https://github.com/textacular/textacular/commits?author=supremebeing7">My Commits</a>
-          </li>
-          <li>
-            <h4>Gitlab</h4>
-            <p>A Ruby wrapper and CLI for the GitLab REST API. I committed clarifying instructions to the README.</p>
-            <a href="https://github.com/NARKOZ/gitlab">View Source</a> |
-            <a href="https://github.com/NARKOZ/gitlab/commits?author=supremebeing7">My Commits</a>
-          </li>
-          <li>
-            <h4>Masonry Rails</h4>
-            <p>An adaptation of the jQuery Masonry plugin ready for use with Rails asset pipeline. I contributed fixes for typos and missing closing tags in examples on README.</p>
-            <a href="https://github.com/kristianmandrup/masonry-rails">View Source</a> |
-            <a href="https://github.com/kristianmandrup/masonry-rails/commits?author=supremebeing7">My Commits</a>
-          </li>
-<!--
-          <li>
-            <h4></h4>
-            <p></p>
-            <a href="">View Source</a> |
-            <a href="">My Commits</a>
-          </li>
--->
-        </ul>
-      </div> <!-- end of Open Source row -->
       <div class="row">
         <a href="/index.html" class="btn btn-xs btn-default"><i class="fa fa-puzzle-piece"></i> Back to Home</a>
       </div>
